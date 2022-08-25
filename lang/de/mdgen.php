@@ -25,64 +25,64 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-// Alphabetical sorting (comments)
+// Alphabetische Sortierung (nach Kommentaren)
 
 // Deprecated since 4.0.
-$string['infosyntax'] = 'Syntax information';
 $string['printheading'] = 'Display mdgen name';
 $string['printheadingexplain'] = 'Display mdgen name above content?';
 
 // Informationen zur Syntax
-$string['headlines'] = '<h5> Headings';
-$string['headlinesdes'] = '<li> To create a headline, add a hashtag (#) before a word or phrase.</li>
-<li>The number of hashtags used should correspond to the headline level.</li>
-<li>For example, to create a level three heading (HTML: h3), use three number characters (for example, ### My Heading). </li><br><hr>';
+$string['infosyntax'] = 'Informationen zur Syntax';
+$string['headlines'] = '<h5> Überschriften';
+$string['headlinesdes'] = '<li> Um eine Überschrift zu erstellen, fügen Sie ein Hashtag (#) vor ein Wort oder einen Satz. </li>
+<li>Die Anzahl der verwendeten Hashtags sollte der Überschriftsebene entsprechen.</li>
+<li>Um zum Beispiel eine Überschrift der Ebene drei (HTML: h3) zu erstellen, verwenden Sie drei Zahlenzeichen (z. B. ### Meine Überschrift). </li><br><hr>';
 
-$string['bolditalic'] = '<h5> Formatting: bold and italic';
+$string['bolditalic'] = '<h5> Formatierung: fett und kursiv';
 $string['bolditalicdes'] = '<li> Um Text fett zu machen, fügen Sie zwei Sternchen oder Unterstriche vor und nach einem Wort oder Satz hinzu. </li>
-<li> To italicize text, insert an asterisk or underscore before and after a word or phrase. </li>
-<li> To emphasize text simultaneously using bold and italics, add three asterisks or underscores before and after a word or phrase. </li><br><hr>';
+<li> Um Text kursiv zu setzen, fügen Sie ein Sternchen oder einen Unterstrich vor und nach einem Wort oder Satz ein. </li>
+<li> Um Text gleichzeitig durch Fett- und Kursivdruck hervorzuheben, fügen Sie drei Sternchen oder Unterstriche vor und nach einem Wort oder Satz hinzu. </li><br><hr>';
 
-$string['lists'] = '<h5> (Un)formatted lists';
-$string['listsdes'] = '<li> To create an ordered list, add rows with numbers followed by dots. </li>
-<li> The numbers do not have to be in numerical order, but the list should start with number one. </li>
-<li> To create an unsorted list, insert hyphens (-), asterisks (*) or plus signs (+) in front of the entries. </li><br><hr>';
+$string['lists'] = '<h5> (Un)formatierte Listen';
+$string['listsdes'] = '<li> Um eine geordnete Liste zu erstellen, fügen Sie Zeilen mit Nummern, gefolgt von Punkten, hinzu. </li>
+<li> Die Nummern müssen nicht in numerischer Reihenfolge stehen, aber die Liste sollte mit der Nummer eins beginnen. </li>
+<li> Um eine unsortierte Liste zu erstellen, fügen Sie Bindestriche (-), Sternchen (*) oder Pluszeichen (+) vor den Einträgen ein. </li><br><hr>';
 
 $string['code'] = '<h5> Code';
-$string['codedes'] = '<li> To mark a word or phrase as code, enclose it in backticks (`). </li>
-<li> To mark a word or phrase as Java code, enclose it in three backticks, java, and another three backticks (``java ```). </li><br><hr>';
+$string['codedes'] = '<li> Um ein Wort oder einen Satz als Code zu kennzeichnen, schließen Sie es in Backticks (`) ein. </li>
+<li> Um ein Wort oder einen Satz als Java Code zu kennzeichnen, schließen Sie es in drei Backticks, java und weitere drei Backticks (```java ```) ein. </li><br><hr>';
 
-$string['newslide'] = '<h5> Horizontal lines ';
-$string['newslidedes'] = '<li>  To include a horizontal line, insert three asterisks (***). </li><br><hr>';
+$string['newslide'] = '<h5> Horizontale Linien ';
+$string['newslidedes'] = '<li> Um eine horizontale Linie einzubinden, fügen Sie drei Sternchen (***) ein. </li><br><hr>';
 
-$string['link'] = '<h5> Include link';
-$string['linkdes'] = '<li> To create a link, enclose the link text in square brackets 
-(e.g. [Moodle]) and then directly specify the URL in brackets (e.g. (https://moodle.de/)).</li>
-<li> Example: [Moodle](https://moodle.de/) </li><br><hr>';
+$string['link'] = '<h5> Link einbinden';
+$string['linkdes'] = '<li> Um einen Link zu erstellen, schließen Sie den Linktext in eckige Klammern ein 
+(z. B. [Moodle]) und geben dann direkt die URL in Klammern an (z. B. (https://moodle.de/)).</li>
+<li> Beispiel: [Moodle](https://moodle.de/) </li><br><hr>';
 
-$string['slide'] = '<h5> Separate slides';
-$string['slidedes'] = '<li> The separator `---` creates sections (left / right navigation).</li>
-<li> The separator `----` creates subpages (up / down navigation).</li><br><hr>';
+$string['slide'] = '<h5> Slides trennen';
+$string['slidedes'] = '<li> Der Trenner `---` erzeugt Abschnitte (links / rechts Navigation).</li>
+<li> Der Trenner `----` erzeugt Unterseiten (hoch / runter Navigation).</li><br><hr>';
 
-$string['more'] = '<h6> For more syntax examples, see: ';
-$string['moredes'] = '<a href="https://www.markdownguide.org/basic-syntax/">More examples</a>';
+$string['more'] = '<h6> Weitere Syntax Beispiele finden Sie unter: ';
+$string['moredes'] = '<a href="https://www.markdownguide.org/basic-syntax/">Weitere Beispiele</a>';
 
 // Markdown Editor Informationsicon 
-$string['modulename_help'] = 'The Markdown Editor module allows a teacher to create a Markdown Editor web resource using the Text Editor. A Markdown Editor module can display mainly headings, tables or formatting. Moreover, it is also possible to include code fragments, images or tasks. 
+$string['modulename_help'] = 'Mit dem Markdown-Editor-Modul kann eine Lehrkraft mithilfe des Texteditors eine Markdown-Editor-Webressource erstellen. Ein Modul des Markdown Editors kann vor allem Überschriften, Tabellen oder Formatierungen anzeigen. Zudem ist es auch möglich, Code Fragmente, Bilder oder Aufgaben einzubauen. 
 
-The advantages of using the Markdown Editor module over the Page module are that the simple Markdown syntax can be used to create consistent presentation scripts using the Reveal.js framework. 
+Die Vorteile der Verwendung des Markdown-Editor-Moduls gegenüber dem Page Modul bestehen darin, dass durch die simple Markdown Syntax mit Hilfe des Reveal.js Frameworks einheitliche Präsentationsskripte erstellt werden können. 
 
-A Markdown editor module can be used
+Ein Markdown-Editor-Modul kann verwendet werden
 
-* to make interactive scripts vivid and consistent 
-* to easily implement formatting of the scripts 
+* um interaktive Skripte anschaulich und einheitlich zu gestalten 
+* um Formatierungen der Skripte einfach umsetzen zu können 
 
-For more information about Markdown syntax, just click "Syntax information" when creating a Markdown editor module';
+Für weitere Informationen zur Markdown Syntax, klicken Sie einfach auf "Informationen zur Syntax" beim Erstellen eines Markdown-Editor-Moduls';
 
 // Standard 
 $string['configdisplayoptions'] = 'Select all options that should be available, existing settings are not modified. Hold CTRL key to select multiple fields.';
-$string['content'] = 'Markdown generator content';
-$string['contentheader'] = 'Content';
+$string['content'] = 'Seiteninhalt';
+$string['contentheader'] = 'Inhalt';
 $string['createmdgen'] = 'Create a new mdgen resource';
 $string['displayoptions'] = 'Available display options';
 $string['displayselect'] = 'Display';
