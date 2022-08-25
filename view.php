@@ -87,6 +87,7 @@ $formatoptions->context = $context;
 $iframe_filename    =  $page->filename . '.html';
 $content = "<iframe src='http://localhost/generator/_slides/$iframe_filename' width='700px' height='500px'></iframe>";
 echo $OUTPUT->box($content, "generalbox center clearfix");
+//test 
 
 
 if (!isset($options['printlastmodified']) || !empty($options['printlastmodified'])) {
