@@ -39,7 +39,7 @@ $string['headlinesdes'] = '<li> To create a headline, add a hashtag (#) before a
 <li>For example, to create a level three heading (HTML: h3), use three number characters (for example, ### My Heading). </li><br><hr>';
 
 $string['bolditalic'] = '<h5> Formatting: bold and italic';
-$string['bolditalicdes'] = '<li> Um Text fett zu machen, fügen Sie zwei Sternchen oder Unterstriche vor und nach einem Wort oder Satz hinzu. </li>
+$string['bolditalicdes'] = '<li> To make text bold, add two asterisks or underscores before and after a word or phrase. </li>
 <li> To italicize text, insert an asterisk or underscore before and after a word or phrase. </li>
 <li> To emphasize text simultaneously using bold and italics, add three asterisks or underscores before and after a word or phrase. </li><br><hr>';
 
