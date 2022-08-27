@@ -49,19 +49,19 @@ class mdgen_observer
             $md_filename    =   $filename . '.md';
 
             // open the file, where content has to stay and write the content in the file
-            $myfile = fopen("../../generator/slides/" . $md_filename, "a") or die("Unable to open file!");
-            fwrite($myfile, $finaltext);
-            fclose($myfile);
+            $mdfile = fopen("../../generator/slides/" . $md_filename, "a") or die("Unable to open file!");
+            fwrite($mdfile, $finaltext);
+            fclose($mdfile);
 
             // create .html filename
             $html_filename = $filename . '.html';
 
             // open the file, where the generation has to stay  
-            $myfile2 = fopen("../../generator/_slides/" . $html_filename, "a") or die("Unable to open file!");
+            $htmlfile = fopen("../../generator/_slides/" . $html_filename, "a") or die("Unable to open file!");
             // no exec(cp), because linux and windows have different commands
-            $file1 = file_get_contents('../../generator/waiting.html');
-            fwrite($myfile2, $file1);
-            fclose($myfile2);
+            $waiting = file_get_contents('../../generator/waiting.html');
+            fwrite($htmlfile, $waiting);
+            fclose($htmlfile);
 
             chdir('../../generator/slides');
             $exe = 'npm run static -- slides/' . $md_filename;
@@ -109,19 +109,19 @@ class mdgen_observer
             $md_filename    =   $filename . '.md';
 
             // open the file, where content has to stay and write the content in the file
-            $myfile = fopen("../../generator/slides/" . $md_filename, "w") or die("Unable to open file!");
-            fwrite($myfile, $finaltext);
-            fclose($myfile);
+            $mdfile = fopen("../../generator/slides/" . $md_filename, "w") or die("Unable to open file!");
+            fwrite($mdfile, $finaltext);
+            fclose($mdfile);
 
             // create .html filename
             $html_filename = $filename . '.html';
 
             // open the file, where the generated file has to stay  
-            $myfile2 = fopen("../../generator/_slides/" . $html_filename, "w") or die("Unable to open file!");
+            $htmlfile = fopen("../../generator/_slides/" . $html_filename, "w") or die("Unable to open file!");
             // no exec(cp), because linux and windows have different commands
-            $file1 = file_get_contents('../../generator/waiting.html');
-            fwrite($myfile2, $file1);
-            fclose($myfile2);
+            $waiting = file_get_contents('../../generator/waiting.html');
+            fwrite($htmlfile, $waiting);
+            fclose($htmlfile);
 
             chdir('../../generator/slides');
             $exe = 'npm run static -- slides/' . $md_filename;
